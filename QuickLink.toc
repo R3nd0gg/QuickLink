@@ -1,0 +1,12 @@
+## Interface: 90105
+## Title: Quick Link
+## Author: Adam (Rendogg-Drak'thul)
+## Notes: This addon allows you to quickly get link of the player to many favorite sites.
+## Version: 1.0.0
+libs/LibStub/LibStub.lua
+libs/LibDropDownExtension.lua
+db/Realms.lua
+Init.lua
+Util.lua
+Popup.lua
+Dropdown.lua
