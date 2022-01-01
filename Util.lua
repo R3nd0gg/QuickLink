@@ -159,8 +159,8 @@ end
 
 function QuickLink:GetCheckPvpUrl(...)
     local name, realm, realmSlug, playerRegion = GetPlayerInfo(...)
-    local modifiedRealm = realm:gsub("(%u%l+)(%u%l+)", "%1 %2")
-    return format("https://check-pvp.fr/%s/%s/%s", playerRegion, modifiedRealm, name), name, realm, realmSlug
+    local checkPvpRealmName = ns.CHECK_PVP_REALMS[realmSlug]
+    return format("https://check-pvp.fr/%s/%s/%s", playerRegion, checkPvpRealmName, name), name, realm, realmSlug
 end
 
 function QuickLink:GetWarcraftLogsUrl(...)
